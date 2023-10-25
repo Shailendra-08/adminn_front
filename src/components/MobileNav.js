@@ -108,7 +108,23 @@ export default function MobileNav({ onOpen, ...rest }) {
                 </BreadcrumbLink>
               </BreadcrumbItem>
             );
-          })}
+          })};
+
+
+{/* added my own code using chatGPT */}
+
+        {/* <BreadcrumbItem>
+          <BreadcrumbLink as={Link} to='/new-arrivals' textTransform='capitalize'>
+            New Arrival
+          </BreadcrumbLink>
+        </BreadcrumbItem> */}
+
+{/* uptil here */}
+
+
+
+
+
       </Breadcrumb>
 
       <HStack spacing={{ base: '0', md: '6' }}>

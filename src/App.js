@@ -11,6 +11,9 @@ import {
   SingleProductPage,
 } from './pages';
 
+import NewArrival from './pages/NewArrival';
+import SingleNewArrivalPage from './pages/SingleNewArrivalPage';
+
 function App() {
   return (
     <Router>
@@ -27,8 +30,21 @@ function App() {
         <PrivateRoute exact path='/products'>
           <ProductsPage />
         </PrivateRoute>
+
+        <PrivateRoute exact path='/newarrival'>
+          <NewArrival />
+        </PrivateRoute>
+
+
+
+
+
         <PrivateRoute exact path='/products/:id'>
           <SingleProductPage />
+        </PrivateRoute>
+
+        <PrivateRoute exact path='/newArrival/:id'>
+          <SingleNewArrivalPage />
         </PrivateRoute>
         <PrivateRoute exact path='/admins'>
           <AdminsPage />

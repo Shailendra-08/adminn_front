@@ -9,6 +9,10 @@ import {
 export const LinkItems = [
   { name: 'Home', url: '/', icon: <FaHome /> },
   { name: 'Products', url: '/products', icon: <FaProductHunt /> },
+
+  // my code here
+  { name: 'New Arrival', url: '/newarrival', icon: <FaProductHunt /> },
+
   { name: 'Orders', url: '/orders', icon: <FaShoppingCart /> },
   { name: 'Admins', url: '/admins', icon: <FaUserTie /> },
 ];
@@ -34,3 +38,9 @@ export const single_order_url = `${domain}/api/orders/`;
 export const update_order_status = `${domain}/api/admin/order/`;
 export const create_new_product = `${domain}/api/admin/product/new`;
 export const delete_review = `${domain}/api/admin/product/review/`;
+
+export const newArrival_url=`${domain}/api/newArrival/`;
+export const single_arrival_url = `${domain}/api/newArrival/`;
+export const update_newArrival_url=`${domain}/api/admin/newArrival/`;
+export const create_newArrival=`${domain}/api/admin/create/newArrival/`;
+export const delete_newArrival=`${domain}/api/admin/newArrival/`;
